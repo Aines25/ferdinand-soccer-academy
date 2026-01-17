@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
   
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
   <!-- Styles -->
   <link href="./dist/output.css" rel="stylesheet">
 </head>
@@ -135,18 +138,50 @@
       <p class="section-subheading">See Us In Action</p>
       <h2 class="section-heading">Training Sessions</h2>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-      <div class="aspect-[4/3] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop" alt="Soccer ball on grass" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-      </div>
-      <div class="aspect-[4/3] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=800&auto=format&fit=crop" alt="Youth players training" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-      </div>
-      <div class="aspect-[4/3] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=800&auto=format&fit=crop" alt="Football boots on pitch" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-      </div>
-      <div class="aspect-[4/3] overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=800&auto=format&fit=crop" alt="Team celebration" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+    
+    <!-- Swiper Gallery -->
+    <div class="swiper training-gallery">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop" alt="Soccer ball on grass" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=800&auto=format&fit=crop" alt="Youth players training" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=800&auto=format&fit=crop" alt="Football boots on pitch" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=800&auto=format&fit=crop" alt="Team celebration" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop" alt="Stadium atmosphere" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=800&auto=format&fit=crop" alt="Training session" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=800&auto=format&fit=crop" alt="Stadium lights" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop" alt="Team huddle" class="w-full h-full object-cover">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -454,6 +489,9 @@
     </div>
   </footer>
 
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <!-- Mobile Menu Script -->
   <script>
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -468,6 +506,33 @@
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
       });
+    });
+
+    // Training Gallery Swiper - Continuous scrolling
+    const trainingGallery = new Swiper('.training-gallery', {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+      loop: true,
+      speed: 9000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 2.5,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3.5,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 4.5,
+          spaceBetween: 24,
+        },
+      },
     });
   </script>
 </body>

@@ -34,4 +34,28 @@
   .section-subheading {
     @apply text-academy-lavender uppercase tracking-widest text-sm mb-2;
   }
+  
+  /* Training Gallery Swiper - Continuous Scroll */
+  .training-gallery {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .training-gallery .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+  
+  .training-gallery .swiper-slide {
+    width: auto;
+    height: auto;
+  }
+  
+  .training-gallery .swiper-slide img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+  }
+  
+  .training-gallery .swiper-slide:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
 }
