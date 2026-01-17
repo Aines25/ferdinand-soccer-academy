@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-body text-white bg-academy-black;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase tracking-wide;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-academy-lavender text-academy-black font-heading uppercase tracking-wider px-8 py-3 
+           hover:bg-white transition-all duration-300 font-semibold;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-academy-lavender text-academy-lavender font-heading uppercase tracking-wider px-8 py-3
+           hover:bg-academy-lavender hover:text-academy-black transition-all duration-300 font-semibold;
+  }
+  
+  .section-heading {
+    @apply text-4xl md:text-5xl font-heading text-white mb-4;
+  }
+  
+  .section-subheading {
+    @apply text-academy-lavender uppercase tracking-widest text-sm mb-2;
+  }
+}

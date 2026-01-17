@@ -1,0 +1,13 @@
+{
+  "name": "ferdinand-soccer-academy",
+  "version": "1.0.0",
+  "description": "Ferdinand Soccer Academy - Official Website",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

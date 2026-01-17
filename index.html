@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferdinand Soccer Academy | Elite Youth Training</title>
+  <meta name="description" content="Ferdinand Soccer Academy offers elite soccer training for youth players of all skill levels. Join our academy and develop your game.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-academy-black/95 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3">
+          <img src="./media/fsa-logo.png" alt="Ferdinand Soccer Academy" class="h-12 w-auto">
+          <span class="font-heading text-xl text-white tracking-wide hidden sm:block">Ferdinand Soccer Academy</span>
+        </a>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-gray-300 hover:text-academy-lavender transition-colors">About</a>
+          <a href="#programs" class="text-gray-300 hover:text-academy-lavender transition-colors">Programs</a>
+          <a href="#coaches" class="text-gray-300 hover:text-academy-lavender transition-colors">Coaches</a>
+          <a href="#contact" class="text-gray-300 hover:text-academy-lavender transition-colors">Contact</a>
+          <a href="#" target="_blank" rel="noopener" class="text-gray-300 hover:text-academy-lavender transition-colors">Kit Shop</a>
+          <a href="#contact" class="btn-primary">Join Now</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-academy-black border-t border-white/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="#about" class="block text-gray-300 hover:text-academy-lavender transition-colors py-2">About</a>
+        <a href="#programs" class="block text-gray-300 hover:text-academy-lavender transition-colors py-2">Programs</a>
+        <a href="#coaches" class="block text-gray-300 hover:text-academy-lavender transition-colors py-2">Coaches</a>
+        <a href="#contact" class="block text-gray-300 hover:text-academy-lavender transition-colors py-2">Contact</a>
+        <a href="#" target="_blank" rel="noopener" class="block text-gray-300 hover:text-academy-lavender transition-colors py-2">Kit Shop</a>
+        <a href="#contact" class="btn-primary inline-block mt-2">Join Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 bg-gradient-to-br from-academy-black via-academy-gray to-academy-black"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23C4B1CF\" fill-opacity=\"0.4\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <p class="section-subheading animate-fade-in">Welcome to Excellence</p>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-heading text-white mb-6 leading-tight">
+        Elevate your <span class="text-academy-lavender">Game</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto font-light">
+        Elite soccer training that transforms passionate players into champions. Join the academy where future stars are made.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#programs" class="btn-primary">Explore Programs</a>
+        <a href="#contact" class="btn-outline">Free 2 week trial</a>
+        <a href="#contact" class="btn-primary">1-2-1 Booking</a>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-academy-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="section-subheading">Our Story</p>
+          <h2 class="section-heading">Building Champions Since 2010</h2>
+          <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+            Ferdinand Soccer Academy was founded with a singular vision: to create an environment where young athletes can develop not just their soccer skills, but their character, discipline, and passion for the beautiful game.
+          </p>
+          <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+            Our holistic approach combines world-class technical training with mental conditioning, ensuring our players are prepared for success on and off the pitch.
+          </p>
+          <div class="grid grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="text-4xl font-heading text-academy-lavender mb-2">500+</div>
+              <div class="text-gray-500 text-sm uppercase tracking-wide">Players Trained</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-heading text-academy-lavender mb-2">15</div>
+              <div class="text-gray-500 text-sm uppercase tracking-wide">Years Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-heading text-academy-lavender mb-2">50+</div>
+              <div class="text-gray-500 text-sm uppercase tracking-wide">Pro Placements</div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-square bg-gradient-to-br from-academy-gray to-academy-black rounded-lg border border-white/10 flex items-center justify-center">
+            <div class="text-center p-8">
+              <svg class="w-24 h-24 mx-auto text-academy-lavender mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+              <p class="text-gray-500 italic">"Where passion meets precision"</p>
+            </div>
+          </div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-academy-lavender/10 rounded-lg -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="py-24 bg-academy-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="section-subheading">What We Offer</p>
+        <h2 class="section-heading">Training Programs</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          From beginners to elite prospects, we have a program designed to elevate every player's game.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Program Card 1 -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8 hover:border-academy-lavender/50 transition-all duration-300 group">
+          <div class="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-academy-lavender/10 transition-colors">
+            <svg class="w-8 h-8 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-heading text-white mb-3">Junior Academy</h3>
+          <p class="text-gray-400 mb-4">Ages 6-10. Foundation skills, coordination, and love for the game.</p>
+          <p class="text-academy-lavender font-semibold">$150/month</p>
+        </div>
+        
+        <!-- Program Card 2 -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8 hover:border-academy-lavender/50 transition-all duration-300 group">
+          <div class="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-academy-lavender/10 transition-colors">
+            <svg class="w-8 h-8 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-heading text-white mb-3">Development Squad</h3>
+          <p class="text-gray-400 mb-4">Ages 11-14. Technical mastery, tactical awareness, competitive play.</p>
+          <p class="text-academy-lavender font-semibold">$200/month</p>
+        </div>
+        
+        <!-- Program Card 3 -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8 hover:border-academy-lavender/50 transition-all duration-300 group">
+          <div class="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-academy-lavender/10 transition-colors">
+            <svg class="w-8 h-8 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-heading text-white mb-3">Elite Prospects</h3>
+          <p class="text-gray-400 mb-4">Ages 15-18. Pre-professional training, college prep, showcase events.</p>
+          <p class="text-academy-lavender font-semibold">$300/month</p>
+        </div>
+        
+        <!-- Program Card 4 -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8 hover:border-academy-lavender/50 transition-all duration-300 group">
+          <div class="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-academy-lavender/10 transition-colors">
+            <svg class="w-8 h-8 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-heading text-white mb-3">Private Training</h3>
+          <p class="text-gray-400 mb-4">1-on-1 sessions tailored to individual player needs and goals.</p>
+          <p class="text-academy-lavender font-semibold">$75/session</p>
+        </div>
+        
+        <!-- Program Card 5 -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8 hover:border-academy-lavender/50 transition-all duration-300 group">
+          <div class="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-academy-lavender/10 transition-colors">
+            <svg class="w-8 h-8 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-heading text-white mb-3">Summer Camps</h3>
+          <p class="text-gray-400 mb-4">Intensive week-long camps during summer break. All skill levels.</p>
+          <p class="text-academy-lavender font-semibold">$400/week</p>
+        </div>
+        
+        <!-- Program Card 6 -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8 hover:border-academy-lavender/50 transition-all duration-300 group">
+          <div class="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-academy-lavender/10 transition-colors">
+            <svg class="w-8 h-8 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-heading text-white mb-3">Goalkeeper Academy</h3>
+          <p class="text-gray-400 mb-4">Specialized training for keepers. Shot-stopping, distribution, positioning.</p>
+          <p class="text-academy-lavender font-semibold">$175/month</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches Section -->
+  <section id="coaches" class="py-24 bg-academy-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="section-subheading">Meet The Team</p>
+        <h2 class="section-heading">Our Coaches</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          Learn from professionals who have played and coached at the highest levels.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Coach Card 1 -->
+        <div class="text-center group">
+          <div class="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-academy-gray to-academy-black border-2 border-white/20 group-hover:border-academy-lavender transition-colors flex items-center justify-center">
+            <span class="text-6xl font-heading text-academy-lavender">RF</span>
+          </div>
+          <h3 class="text-xl font-heading text-white mb-1">Rio Ferdinand</h3>
+          <p class="text-academy-lavender text-sm mb-3">Founder & Head Coach</p>
+          <p class="text-gray-400 text-sm">Former Premier League defender with over 500 professional appearances.</p>
+        </div>
+        
+        <!-- Coach Card 2 -->
+        <div class="text-center group">
+          <div class="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-academy-gray to-academy-black border-2 border-white/20 group-hover:border-academy-lavender transition-colors flex items-center justify-center">
+            <span class="text-6xl font-heading text-academy-lavender">SC</span>
+          </div>
+          <h3 class="text-xl font-heading text-white mb-1">Anton Ferdinand</h3>
+          <p class="text-academy-lavender text-sm mb-3">Technical Director</p>
+          <p class="text-gray-400 text-sm">UEFA Pro License holder, former national team player.</p>
+        </div>
+        
+        <!-- Coach Card 3 -->
+        <div class="text-center group">
+          <div class="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-academy-gray to-academy-black border-2 border-white/20 group-hover:border-academy-lavender transition-colors flex items-center justify-center">
+            <span class="text-6xl font-heading text-academy-lavender">MR</span>
+          </div>
+          <h3 class="text-xl font-heading text-white mb-1">Max Ferdinand</h3>
+          <p class="text-academy-lavender text-sm mb-3">Youth Development Coach</p>
+          <p class="text-gray-400 text-sm">Specialist in youth development with 15+ years experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-academy-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <p class="section-subheading">Get In Touch</p>
+          <h2 class="section-heading">Start Your Journey</h2>
+          <p class="text-gray-400 text-lg mb-8">
+            Ready to take your game to the next level? Contact us to schedule a trial session or learn more about our programs.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold">Location</p>
+                <p class="text-gray-400">123 Champions Way, London, UK</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold">Email</p>
+                <p class="text-gray-400">info@ferdinandacademy.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center">
+                <svg class="w-6 h-6 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold">Phone</p>
+                <p class="text-gray-400">+44 20 1234 5678</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="bg-academy-black border border-white/10 rounded-lg p-8">
+          <form class="space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm text-gray-400 mb-2">First Name</label>
+                <input type="text" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-academy-lavender transition-colors" placeholder="John">
+              </div>
+              <div>
+                <label class="block text-sm text-gray-400 mb-2">Last Name</label>
+                <input type="text" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-academy-lavender transition-colors" placeholder="Doe">
+              </div>
+            </div>
+            
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Email</label>
+              <input type="email" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-academy-lavender transition-colors" placeholder="john@example.com">
+            </div>
+            
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Phone</label>
+              <input type="tel" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-academy-lavender transition-colors" placeholder="+44 123 456 789">
+            </div>
+            
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Program Interest</label>
+              <select class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-academy-lavender transition-colors">
+                <option value="" class="bg-academy-black">Select a program</option>
+                <option value="junior" class="bg-academy-black">Junior Academy (6-10)</option>
+                <option value="development" class="bg-academy-black">Development Squad (11-14)</option>
+                <option value="elite" class="bg-academy-black">Elite Prospects (15-18)</option>
+                <option value="private" class="bg-academy-black">Private Training</option>
+                <option value="goalkeeper" class="bg-academy-black">Goalkeeper Academy</option>
+                <option value="camp" class="bg-academy-black">Summer Camps</option>
+              </select>
+            </div>
+            
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Message</label>
+              <textarea rows="4" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-academy-lavender transition-colors resize-none" placeholder="Tell us about your goals..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary w-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-academy-black border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="./media/fsa-logo.png" alt="Ferdinand Soccer Academy" class="h-10 w-auto">
+            <span class="font-heading text-white">Ferdinand Academy</span>
+          </div>
+          <p class="text-gray-500 text-sm">Building champions on and off the pitch since 2010.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-heading text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#about" class="text-gray-400 hover:text-academy-lavender transition-colors">About Us</a></li>
+            <li><a href="#programs" class="text-gray-400 hover:text-academy-lavender transition-colors">Programs</a></li>
+            <li><a href="#coaches" class="text-gray-400 hover:text-academy-lavender transition-colors">Coaches</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-academy-lavender transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-heading text-white mb-4">Programs</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#programs" class="text-gray-400 hover:text-academy-lavender transition-colors">Junior Academy</a></li>
+            <li><a href="#programs" class="text-gray-400 hover:text-academy-lavender transition-colors">Development Squad</a></li>
+            <li><a href="#programs" class="text-gray-400 hover:text-academy-lavender transition-colors">Elite Prospects</a></li>
+            <li><a href="#programs" class="text-gray-400 hover:text-academy-lavender transition-colors">Summer Camps</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-heading text-white mb-4">Follow Us</h4>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:bg-academy-lavender hover:text-academy-black transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:bg-academy-lavender hover:text-academy-black transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center text-gray-400 hover:bg-academy-lavender hover:text-academy-black transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-gray-500 text-sm">&copy; 2026 Ferdinand Soccer Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
