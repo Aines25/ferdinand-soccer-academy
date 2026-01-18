@@ -63,11 +63,10 @@
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <!-- Background Image -->
-    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2000&auto=format&fit=crop" alt="Football stadium" class="absolute inset-0 w-full h-full object-cover">
-    <!-- Dark overlays -->
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+    <!-- <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2000&auto=format&fit=crop" alt="Football stadium" class="absolute inset-0 w-full h-full object-cover"> -->
+    <img src="./media/coaches.jpg" alt="Coaches" class="absolute inset-0 w-full h-full object-cover">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/60 to-black/700 pointer-events-none"></div>
     
     <!-- Content -->
     <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -122,8 +121,19 @@
           </div>
         </div>
         <div class="relative">
-          <div class="aspect-square rounded-lg overflow-hidden border border-white/10">
-            <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=1000&auto=format&fit=crop" alt="Youth soccer training session" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          <div class="aspect-square rounded-lg overflow-hidden border border-white/10 relative">
+            <video 
+              src="./media/fsa-video-small.mp4" 
+              autoplay 
+              muted 
+              loop 
+              playsinline 
+              class="w-full h-full object-cover"
+              poster="./media/max.jpg">
+              Your browser does not support the video tag.
+            </video>
+            <!-- Gradient overlay to reduce brightness -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/20 pointer-events-none"></div>
           </div>
           <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-academy-lavender/10 rounded-lg -z-10"></div>
           <div class="absolute -top-4 -left-4 w-32 h-32 bg-academy-lavender/5 rounded-lg -z-10"></div>
@@ -144,42 +154,57 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop" alt="Soccer ball on grass" class="w-full h-full object-cover">
+            <img src="./media/training/training-1.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=800&auto=format&fit=crop" alt="Youth players training" class="w-full h-full object-cover">
+            <img src="./media/training/training-2.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?q=80&w=800&auto=format&fit=crop" alt="Football boots on pitch" class="w-full h-full object-cover">
+            <img src="./media/training/training-3.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=800&auto=format&fit=crop" alt="Team celebration" class="w-full h-full object-cover">
+            <img src="./media/training/training-4.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop" alt="Stadium atmosphere" class="w-full h-full object-cover">
+            <img src="./media/training/training-5.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=800&auto=format&fit=crop" alt="Training session" class="w-full h-full object-cover">
+            <img src="./media/training/training-6.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=800&auto=format&fit=crop" alt="Stadium lights" class="w-full h-full object-cover">
+            <img src="./media/training/training-7.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="aspect-[4/3] overflow-hidden rounded-lg">
-            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop" alt="Team huddle" class="w-full h-full object-cover">
+            <img src="./media/training/training-8.jpg" alt="Training session" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="./media/training/training-9.jpg" alt="Training session" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="./media/training/training-10.jpg" alt="Training session" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg">
+            <img src="./media/training/training-11.jpg" alt="Training session" class="w-full h-full object-cover">
           </div>
         </div>
       </div>
@@ -288,7 +313,7 @@
         <!-- Coach Card 1 -->
         <div class="text-center group">
           <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-academy-lavender transition-colors">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="Rio Ferdinand" class="w-full h-full object-cover">
+            <img src="./media/coach-1.jpg" alt="Rio Ferdinand" class="w-full h-full object-cover">
           </div>
           <h3 class="text-xl font-heading text-white mb-1">Rio Ferdinand</h3>
           <p class="text-academy-lavender text-sm mb-3">Founder & Head Coach</p>
@@ -298,7 +323,7 @@
         <!-- Coach Card 2 -->
         <div class="text-center group">
           <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-academy-lavender transition-colors">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop" alt="Anton Ferdinand" class="w-full h-full object-cover">
+            <img src="./media/coach-2.jpg" alt="Anton Ferdinand" class="w-full h-full object-cover">
           </div>
           <h3 class="text-xl font-heading text-white mb-1">Anton Ferdinand</h3>
           <p class="text-academy-lavender text-sm mb-3">Technical Director</p>
@@ -308,7 +333,7 @@
         <!-- Coach Card 3 -->
         <div class="text-center group">
           <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-2 border-white/20 group-hover:border-academy-lavender transition-colors">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Max Ferdinand" class="w-full h-full object-cover">
+            <img src="./media/max.jpg" alt="Max Ferdinand" class="w-full h-full object-cover">
           </div>
           <h3 class="text-xl font-heading text-white mb-1">Max Ferdinand</h3>
           <p class="text-academy-lavender text-sm mb-3">Youth Development Coach</p>
@@ -340,7 +365,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <p class="section-subheading">Follow The Journey</p>
-        <h2 class="section-heading">@ferdinandsocceracademy</h2>
+        <h2 class="section-heading text-2xl md:text-5xl">@ferdinandsocceracademy</h2>
         <p class="text-gray-400 max-w-2xl mx-auto mb-6">
           Stay connected with the latest training highlights, match moments, and academy life.
         </p>
