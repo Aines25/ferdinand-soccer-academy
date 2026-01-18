@@ -394,16 +394,31 @@
           </p>
           
           <div class="space-y-6">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center">
+            <!-- Location 1 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
               </div>
               <div>
-                <p class="text-white font-semibold">Location</p>
-                <p class="text-gray-400">123 Champions Way, London, UK</p>
+                <p class="text-white font-semibold">Kedbull Leisure</p>
+                <p class="text-gray-400">Nelson Road, Northfleet, DA11 7EE</p>
+              </div>
+            </div>
+            
+            <!-- Location 2 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-academy-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold">Leigh Academy Ebbsfleet</p>
+                <p class="text-gray-400">Southfleet Road, Ebbsfleet Garden City, Kent, DA10 0BZ</p>
               </div>
             </div>
             
@@ -454,6 +469,48 @@
             </a>
           </div>
           <p class="text-gray-500 text-sm text-center mt-6">Interested in partnering with us? <a href="mailto:info" class="text-academy-lavender hover:underline">Get in touch</a></p>
+        </div>
+      </div>
+      
+      <!-- Map Section -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-heading text-white mb-6 text-center">Our Training Locations</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Kedbull Leisure Map -->
+          <div class="rounded-lg overflow-hidden border border-white/10">
+            <div class="bg-academy-black/50 px-4 py-3 border-b border-white/10">
+              <p class="text-white font-semibold text-sm">Kedbull Leisure</p>
+              <p class="text-gray-400 text-xs">Nelson Road, Northfleet, DA11 7EE</p>
+            </div>
+            <iframe 
+              src="https://www.google.com/maps?q=Kedbull+Leisure+Nelson+Road+Northfleet+DA11+7EE&output=embed"
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="grayscale hover:grayscale-0 transition-all duration-500">
+            </iframe>
+          </div>
+          
+          <!-- Leigh Academy Ebbsfleet Map -->
+          <div class="rounded-lg overflow-hidden border border-white/10">
+            <div class="bg-academy-black/50 px-4 py-3 border-b border-white/10">
+              <p class="text-white font-semibold text-sm">Leigh Academy Ebbsfleet</p>
+              <p class="text-gray-400 text-xs">Southfleet Road, Ebbsfleet Garden City, Kent, DA10 0BZ</p>
+            </div>
+            <iframe 
+              src="https://www.google.com/maps?q=Leigh+Academy+Ebbsfleet+Southfleet+Road+Ebbsfleet+Garden+City+Kent+DA10+0BZ&output=embed"
+              width="100%" 
+              height="250" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="grayscale hover:grayscale-0 transition-all duration-500">
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
