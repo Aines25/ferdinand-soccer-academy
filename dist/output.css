@@ -1165,6 +1165,11 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 
+.object-\[center_calc\(50\%--280px\)\] {
+  -o-object-position: center calc(50% - -280px);
+     object-position: center calc(50% - -280px);
+}
+
 .p-6 {
   padding: 1.5rem;
 }
