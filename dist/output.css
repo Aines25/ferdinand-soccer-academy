@@ -1165,9 +1165,9 @@ h1, h2, h3, h4, h5, h6 {
      object-fit: cover;
 }
 
-.object-\[center_calc\(50\%--280px\)\] {
-  -o-object-position: center calc(50% - -280px);
-     object-position: center calc(50% - -280px);
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-6 {
@@ -1443,6 +1443,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
   }
 
+  .sm\:object-center {
+    -o-object-position: center;
+       object-position: center;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1489,6 +1494,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:object-\[center_calc\(50\%--280px\)\] {
+    -o-object-position: center calc(50% - -280px);
+       object-position: center calc(50% - -280px);
   }
 
   .lg\:px-8 {
