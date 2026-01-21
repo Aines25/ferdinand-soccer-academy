@@ -102,8 +102,10 @@
 
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background Image -->
-    <img src="./media/coaches.jpg" alt="Coaches" class="absolute inset-0 w-full h-full object-cover">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+      <source src="./media/fsa-video-short.mp4" type="video/mp4">
+    </video>
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/50 to-black/60 pointer-events-none"></div>
     
@@ -160,19 +162,8 @@
           </div>
         </div>
         <div class="relative">
-          <div class="aspect-square rounded-lg overflow-hidden border border-white/10 relative">
-            <video 
-              src="./media/fsa-video-small.mp4" 
-              autoplay 
-              muted 
-              loop 
-              playsinline 
-              class="w-full h-full object-cover"
-              poster="./media/max.jpg">
-              Your browser does not support the video tag.
-            </video>
-            <!-- Gradient overlay to reduce brightness -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/20 pointer-events-none"></div>
+          <div class="aspect-square rounded-lg overflow-hidden border border-white/10">
+            <img src="./media/coaches-2.jpg" alt="Ferdinand Soccer Academy Coaches" class="w-full h-full object-cover">
           </div>
           <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-academy-lavender/10 rounded-lg -z-10"></div>
           <div class="absolute -top-4 -left-4 w-32 h-32 bg-academy-lavender/5 rounded-lg -z-10"></div>
